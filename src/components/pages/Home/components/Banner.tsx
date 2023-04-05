@@ -4,8 +4,8 @@ const descriptionStyle = 'text-black text-[22px] font-medium mb-[20px]';
 
 const Banner = () => {
   return (
-    <div className='h-[95vh] box-border bg-secondary'>
-      <div className='flex  px-[120px] py-[150px]'>
+    <div className='h-[90vh] box-border bg-secondary'>
+      <div className='flex  px-[120px] py-[100px] box-border'>
         <div id='left-info' className='w-1/2'>
           <div className='ml-auto w-[90%]'>
             <div className='flex items-center box-border my-[20px] mb-[20px]'>
@@ -17,8 +17,8 @@ const Banner = () => {
             </div>
             <h2 className='text-black font-bold text-[52px] border-box mb-[20px]'>
               NICE TO MEET YOU,
-              <br /> MY NAME IS NGUYEN TIEN{' '}
-              <span className='text-primary'>P</span>HONG
+              <br /> MY NAME IS{' '}
+              <span className='text-primary'>NGUYEN TIEN PHONG</span>
             </h2>
             <p className={`${descriptionStyle}`}>
               I have been learning and working as a React Developer since 2020

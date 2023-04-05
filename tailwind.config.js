@@ -9,12 +9,18 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    clipPath: {
+      arrowRight: 'polygon(100% 50%, 0 0, 0 100%)',
+    },
     extend: {
       colors: {
         primary: '#FFB600',
         secondary: '#F4E8D4',
       },
+      animation: {
+        'spin-slow': 'spin 10s linear infinite',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-clip-path')],
 };
