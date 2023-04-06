@@ -9,8 +9,8 @@ interface Props {
 const lineStyle =
   'w-[20px] h-[2px] bg-black mb-[3px] last:mb-0 duration-[400ms]';
 
-const HamburgerButton: FC<Props> = forwardRef(
-  ({ onClick, closeColor, isToggle }) => {
+const HamburgerButton = forwardRef<any, Props>(
+  ({ onClick, closeColor, isToggle }, ref) => {
     const handleClick = (e: MouseEvent) => {
       onClick?.(e);
     };

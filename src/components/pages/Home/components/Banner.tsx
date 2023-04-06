@@ -4,7 +4,7 @@ const descriptionStyle = 'text-black text-[22px] font-medium mb-[20px]';
 
 const Banner = () => {
   return (
-    <div className='h-[90vh] box-border bg-secondary'>
+    <div className='box-border bg-secondary'>
       <div className='flex  px-[120px] py-[100px] box-border'>
         <div id='left-info' className='w-1/2'>
           <div className='ml-auto w-[90%]'>

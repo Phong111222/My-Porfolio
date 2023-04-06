@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div
       id='header'
-      className='flex justify-between items-center px-[16px] py-[10px] bg-secondary shadow h-[10vh] box-border'
+      className='flex justify-between items-center px-[16px] md:py-[50px] bg-secondary shadow box-border'
     >
       <h1
         className='text-[20px] sm:text-[32px] md:text-[32px] lg:text-[40px] md:text-primary font-semibold cursor-pointer flex items-center'

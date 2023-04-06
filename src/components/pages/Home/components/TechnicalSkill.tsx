@@ -108,7 +108,7 @@ const TechnicalSkills = () => {
           <div>
             {ExperienceDescriptions.map((ele) => {
               return (
-                <div className='mb-[50px]'>
+                <div className='mb-[50px]' key={ele.title}>
                   <SkillCard {...ele} />
                 </div>
               );
