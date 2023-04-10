@@ -6,6 +6,7 @@ interface Props {
   dateFrom?: string;
   dateTo?: string;
   description?: string;
+  className?: string;
 }
 
 const SkillCard: FC<Props> = ({
@@ -14,9 +15,12 @@ const SkillCard: FC<Props> = ({
   dateFrom,
   dateTo,
   description,
+  className,
 }) => {
   return (
-    <div className='text-white border-box bg-gray-700 px-[40px] py-[20px] rounded-[5px] box shadow-[0px_0px_5px_1px_rgba(255,255,255,0.4)]'>
+    <div
+      className={`text-white box-border bg-gray-700 px-[40px] py-[20px] rounded-[5px] shadow-[0px_0px_5px_1px_rgba(255,255,255,0.4)] ${className}`}
+    >
       <h4 className='text-[36px] mb-[5px] font-semibold text-secondary '>
         {title}
       </h4>

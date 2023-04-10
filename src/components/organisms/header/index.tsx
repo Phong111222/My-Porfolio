@@ -1,5 +1,5 @@
 import HamburgerButton from '@/components/atoms/HamburgerButton';
-import ReactLogo from '@/components/atoms/ReactIcon';
+import ReactLogo from '@/components/atoms/icon/ReactIcon';
 import Navigation from '@/components/molecules/navigation';
 import MobileNavigation from '@/components/molecules/navigation/MobileNavigation';
 import useIsMobile from '@/hooks/useIsMobile';
@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <div
       id='header'
-      className='flex justify-between items-center px-[16px] md:py-[50px] bg-secondary shadow box-border'
+      className='flex justify-between items-center px-[50px] py-[50px] bg-secondary  box-border animate-fade-in'
     >
       <h1
         className='text-[20px] sm:text-[32px] md:text-[32px] lg:text-[40px] md:text-primary font-semibold cursor-pointer flex items-center'

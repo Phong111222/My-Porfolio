@@ -1,5 +1,6 @@
 import { FC, ReactNode } from 'react';
 import Header from '../organisms/header';
+import Footer from '../organisms/footer';
 
 interface Props {
   children: ReactNode;
@@ -7,9 +8,10 @@ interface Props {
 
 const Layout: FC<Props> = ({ children }) => {
   return (
-    <div>
+    <div className='h-[100vh] flex flex-col overflow-auto'>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 };

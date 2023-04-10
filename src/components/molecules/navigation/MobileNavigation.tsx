@@ -1,4 +1,4 @@
-import { navigationItems } from '@/constants';
+import { navigationItems } from '@/constants/index';
 import { usePathname } from 'next/navigation';
 import { FC } from 'react';
 

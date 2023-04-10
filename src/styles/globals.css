@@ -8,3 +8,11 @@
     font-family: 'Mukta', sans-serif;
   }
 }
+
+#skill .back-end-icon g {
+  fill: #f4e8d4;
+}
+
+#skill .mobile-icon path {
+  stroke: #f4e8d4;
+}

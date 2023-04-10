@@ -64,10 +64,10 @@ const ExperienceDescriptions: SkillCardProps[] = [
   },
 ];
 
-const TechnicalSkills = () => {
+const SkillsAndExperiences = () => {
   return (
-    <div id='technical-skills' className='bg-black h-[100vh] border-box'>
-      <div className='v-[100%] flex px-[120px] py-[40px]'>
+    <div id='technical-skills' className='bg-black box-border'>
+      <div className='flex px-[120px] py-[120px] box-border'>
         <div className='flex-1'>
           <div className='w-[80%] mr-auto'>
             <h3 className='text-primary text-[80px] font-bold leading-[80px] tracking-[5px] '>
@@ -109,7 +109,10 @@ const TechnicalSkills = () => {
             {ExperienceDescriptions.map((ele) => {
               return (
                 <div className='mb-[50px]' key={ele.title}>
-                  <SkillCard {...ele} />
+                  <SkillCard
+                    {...ele}
+                    className='shadow-[1px_1px_3px_1px_#2f3745]'
+                  />
                 </div>
               );
             })}
@@ -120,4 +123,4 @@ const TechnicalSkills = () => {
   );
 };
 
-export default TechnicalSkills;
+export default SkillsAndExperiences;

@@ -1,11 +1,11 @@
-import ReactLogo from '@/components/atoms/ReactIcon';
+import ReactLogo from '@/components/atoms/icon/ReactIcon';
 
 const descriptionStyle = 'text-black text-[22px] font-medium mb-[20px]';
 
 const Banner = () => {
   return (
-    <div className='box-border bg-secondary'>
-      <div className='flex  px-[120px] py-[100px] box-border'>
+    <div className='box-border bg-secondary animate-fade-in'>
+      <div className='flex  px-[120px]  pt-0 pb-[100px] box-border'>
         <div id='left-info' className='w-1/2'>
           <div className='ml-auto w-[90%]'>
             <div className='flex items-center box-border my-[20px] mb-[20px]'>
@@ -15,7 +15,7 @@ const Banner = () => {
               </h2>
               <div className='flex-1 h-[3px] bg-black ml-[10px]' />
             </div>
-            <h2 className='text-black font-bold text-[52px] border-box mb-[20px]'>
+            <h2 className='text-black font-bold text-[52px] box-border mb-[20px]'>
               NICE TO MEET YOU,
               <br /> MY NAME IS{' '}
               <span className='text-primary'>NGUYEN TIEN PHONG</span>
