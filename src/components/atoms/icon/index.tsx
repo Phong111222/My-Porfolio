@@ -5,6 +5,8 @@ import MobileIcon from './MobileIcon';
 import LinkedInIcon from './LinkedInIcon';
 import GmailIcon from './GmailIcon';
 import SkypeIcon from './SkypeIcon';
+import CheckedIcon from './CheckedIcon';
+import LoadingIcon from './LoadingIcon';
 export {
   ReactLogo,
   BackEndIcon,
@@ -13,4 +15,6 @@ export {
   GmailIcon,
   LinkedInIcon,
   SkypeIcon,
+  CheckedIcon,
+  LoadingIcon,
 };

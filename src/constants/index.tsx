@@ -4,10 +4,10 @@ import { NavigationItem } from '@/interfaces/NavigationItem';
 export const navigationItems: NavigationItem[] = [
   {
     title: 'About',
-    path: '/about',
+    path: '/',
   },
   {
-    title: 'Skill',
+    title: 'Skills',
     path: '/skill',
   },
   {

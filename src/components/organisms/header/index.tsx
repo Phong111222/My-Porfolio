@@ -3,6 +3,7 @@ import ReactLogo from '@/components/atoms/icon/ReactIcon';
 import Navigation from '@/components/molecules/navigation';
 import MobileNavigation from '@/components/molecules/navigation/MobileNavigation';
 import useIsMobile from '@/hooks/useIsMobile';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useCallback, useState } from 'react';
 
@@ -18,6 +19,8 @@ const Header = () => {
     router.push(path);
     setOpenDrawerNavigation(false);
   };
+
+  const onDownloadCV = () => {};
 
   return (
     <div
@@ -43,6 +46,16 @@ const Header = () => {
           <Navigation />
         )}
       </div>
+
+      <a
+        href={'cv.pdf'}
+        download={'NguyenTienPhong-CV'}
+        className='inline-block px-[30px] py-[10px] bg-primary text-black text-[18px] rounded-[3px] 
+          font-semibold cursor-pointer shadow-[0px_0px_5px_1px_rgba(0,0,0,0.3)]'
+      >
+        Download CV
+      </a>
+
       {isMobile && (
         <MobileNavigation open={openDrawerNavigation} onClose={onClose} />
       )}

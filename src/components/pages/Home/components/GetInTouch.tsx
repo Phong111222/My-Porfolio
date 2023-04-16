@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 const GetInTouch = () => {
   return (
     <div className='px-[120px] py-[80px] bg-primary'>
@@ -11,9 +12,13 @@ const GetInTouch = () => {
             <br />
             to response you.
           </p>
-          <a className='inline-block px-[30px] py-[10px] bg-black text-white mr-[20px] text-[18px] rounded-[3px] font-semibold cursor-pointer '>
+          <Link
+            scroll
+            href={'/contact'}
+            className='inline-block px-[30px] py-[10px] bg-black text-white mr-[20px] text-[18px] rounded-[3px] font-semibold cursor-pointer '
+          >
             Contact
-          </a>
+          </Link>
         </div>
         <div
           id='right-contact'

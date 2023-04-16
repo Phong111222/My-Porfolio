@@ -7,6 +7,10 @@ const Navigation: FC = () => {
   const pathName = usePathname();
   const router = useRouter();
 
+  const handleNavigatePath = (path: string) => {
+    router.push(path);
+  };
+
   return (
     <div id='navigation-container' className='flex container'>
       {navigationItems.map((item) => {
@@ -22,12 +26,12 @@ const Navigation: FC = () => {
         return (
           <div
             key={item.title}
-            onClick={() => router.push(item?.path as string)}
-            className={`mx-[10px] last:mr-[0] duration-300  ${
+            onClick={() => handleNavigatePath(String(item.path))}
+            className={`mx-[30px] last:mr-[0] duration-300  ${
               isSelected ? 'text-primary' : 'text-black'
             }  cursor-pointer font-semibold ${afterStyle}`}
           >
-            <p>{item.title}</p>
+            <p className='text-[24px]'>{item.title}</p>
           </div>
         );
       })}

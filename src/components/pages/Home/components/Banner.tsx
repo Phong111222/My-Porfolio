@@ -1,4 +1,5 @@
 import ReactLogo from '@/components/atoms/icon/ReactIcon';
+import Link from 'next/link';
 
 const descriptionStyle = 'text-black text-[22px] font-medium mb-[20px]';
 
@@ -32,12 +33,18 @@ const Banner = () => {
               I also have experiences in mobile development with React Native
             </p>
             <div className='flex justify-center items-center mt-[80px]'>
-              <a className='inline-block px-[30px] py-[10px] bg-primary text-black mr-[20px] text-[18px] rounded-[3px] font-semibold cursor-pointer shadow-[-10px_10px_5px_0px_rgba(0,0,0,1)]'>
+              <Link
+                href={'/contact'}
+                className='inline-block px-[30px] py-[10px] bg-primary text-black mr-[20px] text-[18px] rounded-[3px] font-semibold cursor-pointer shadow-[-10px_10px_5px_0px_rgba(0,0,0,1)]'
+              >
                 Contact Me
-              </a>
-              <a className='inline-block px-[30px] py-[10px] bg-black text-white text-[18px] rounded-[3px] font-semibold cursor-pointer shadow-[0px_0px_10px_1px_rgba(0,0,0,0.3)]'>
+              </Link>
+              <Link
+                href={'/#'}
+                className='inline-block px-[30px] py-[10px] bg-black text-white text-[18px] rounded-[3px] font-semibold cursor-pointer shadow-[0px_0px_10px_1px_rgba(0,0,0,0.3)]'
+              >
                 Know More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
